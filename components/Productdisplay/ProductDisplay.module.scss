@@ -1,0 +1,85 @@
+.product_display {
+    background-color: #FFFFFF;
+    margin: 0.2rem;
+    height: auto;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 3s ease-in-out box-shadow cursor;
+    -webkit-transition: 3s ease-in-out box-shadow cursor;
+    -moz-transition: 3s ease-in-out box-shadow cursor;
+    -ms-transition: 3s ease-in-out box-shadow cursor;
+    -o-transition: 3s ease-in-out box-shadow cursor;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+
+    img {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transition: 0.35s ease-in-out transform;
+        -webkit-transition: 0.35s ease-in-out transform;
+        -moz-transition: 0.35s ease-in-out transform;
+        -ms-transition: 0.35s ease-in-out transform;
+        -o-transition: 0.35s ease-in-out transform;
+    }
+
+    .text_container {
+        width: 100%;
+        position: absolute;
+        bottom: -70%;
+        transition: 0.35s ease-in-out bottom;
+        -webkit-transition: 0.35s ease-in-out bottom;
+        -moz-transition: 0.35s ease-in-out bottom;
+        -ms-transition: 0.35s ease-in-out bottom;
+        -o-transition: 0.35s ease-in-out bottom;
+        
+        @media (max-width: 500px) {
+            bottom: -70%;
+        }
+
+        .tc_box {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.2rem 0.3rem;
+            backdrop-filter: blur(20px) saturate(200%);
+            -webkit-backdrop-filter: blur(20px) saturate(200%);
+            background-color: rgba(255, 255, 255, 0.57);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 2px 16px 4px rgb(40 44 63 / 7%);
+        cursor: pointer;
+
+        img {
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+
+        .text_container {
+            bottom: 35%;
+
+            @media (max-width: 500px) {
+                bottom: 20%;
+            }
+        }
+    }
+
+}
