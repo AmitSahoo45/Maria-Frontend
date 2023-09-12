@@ -22,9 +22,9 @@ const Navbar = () => {
             </div>
             <nav aria-label="navigation" className='nav'>
                 <ul className={styles.navbar}>
-                    <Link href={'/western'}><a className='hover-underline-animate'><li>Western</li></a></Link>
-                    <Link href={'/indian'}><a className='hover-underline-animate'><li>Indian</li></a></Link>
-                    <Link href={'/others'}><a className='hover-underline-animate'><li>Sports</li></a></Link>
+                    <Link href={'/category/western'}><a className='hover-underline-animate'><li>Western</li></a></Link>
+                    <Link href={'/category/indian'}><a className='hover-underline-animate'><li>Indian</li></a></Link>
+                    <Link href={'/category/sports'}><a className='hover-underline-animate'><li>Sports</li></a></Link>
                 </ul>
             </nav>
             <div className={styles.icons}>

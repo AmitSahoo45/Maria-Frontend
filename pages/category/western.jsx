@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
-import styles from '../styles/components/western.module.scss'
-import { Breadcrumbs, ProductDisplay } from '../components';
+import styles from '../../styles/components/western.module.scss'
+import { Breadcrumbs, ProductDisplay } from '../../components';
 
 const Western = () => {
   const router = useRouter()

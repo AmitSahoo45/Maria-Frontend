@@ -7,7 +7,6 @@ const Product = () => {
 
     return (
         <div>
-            Slug : {slug.map(item => (<p>{item}</p>))}
         </div>
     )
 }
